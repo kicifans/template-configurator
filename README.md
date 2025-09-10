@@ -23,8 +23,8 @@ Application used as a tool for scanning and changing ODT files in specified fold
       - `template.configuration.links-output-path`
    - log file location
      - `logging.file.name`
-3. Generate application .jar running `./mvnw clean package`
-4. Run java project `java -jar target\templateconfigurator-0.1.jar`
+3. Generate application .jar running `./mvnw clean package` in PowerShell
+4. Run java project `java -jar target\templateconfigurator-0.1.jar` in PowerShell
 
 ## Libraries used in project
 
