@@ -1,0 +1,16 @@
+{
+  "linkReplacements": [
+    {
+      "currentBlock": "block_1.odt",
+      "newBlock": "block_1a.odt"
+    },
+    {
+      "currentBlock": "block_2.odt",
+      "newBlock": "block_3.odt"
+    },
+    {
+      "currentBlock": "header_2.odt",
+      "newBlock": "footer_1.odt"
+    }
+  ]
+}
