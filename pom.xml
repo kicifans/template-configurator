@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>lv.krists</groupId>
 	<artifactId>templateconfigurator</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>templateconfigurator</name>
 	<description>Application for configuring ODT template files</description>
 	<url/>
