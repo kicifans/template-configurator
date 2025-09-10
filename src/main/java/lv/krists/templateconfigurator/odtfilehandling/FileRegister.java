@@ -53,7 +53,7 @@ public class FileRegister {
         }
     }
 
-    private boolean isBlockFile(String name) {
+    public boolean isBlockFile(String name) {
         return name.startsWith("block_") || name.startsWith("footer_") ||
                 name.startsWith("header_");
     }

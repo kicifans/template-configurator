@@ -34,7 +34,7 @@ public class TemplateFileConfigurator {
     }
 
     //get OdtFileConfiguration from JSON file (file location specified in properties).
-    private OdtConfiguration findConfiguration() {
+    public OdtConfiguration findConfiguration() {
         ObjectMapper objectMapper = new ObjectMapper();
         OdtConfiguration odtConfiguration = null;
         try {

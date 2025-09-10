@@ -1,6 +1,7 @@
 package lv.krists.templateconfigurator.odtfilehandling;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import lv.krists.templateconfigurator.entities.configurator.OdtConfiguration;
 import lv.krists.templateconfigurator.entities.links.Template;
@@ -22,6 +23,7 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 @Component
+@Data
 @Slf4j
 public class TemplateLinkReader {
 
@@ -37,7 +39,7 @@ public class TemplateLinkReader {
         this.domHelper = domHelper;
     }
 
-    //read templates for links
+    //read templates for included links
     public void processLinkReading() {
         searchForTemplateLinks();
         log.info("Template processing finished.");
@@ -123,7 +125,7 @@ public class TemplateLinkReader {
     }
 
     //creates new Json file at specified location, containing information about links attached to it
-    private void saveTemplateLinksJson() {
+    public void saveTemplateLinksJson() {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(properties.getLinksOutputPath()), templateImportLinks);
